@@ -1,70 +1,124 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-color:#222831;
+
+body {
+    background-color: #222831;
     overflow-x: hidden;
-}
-nav{
     color: white;
 }
-hr{
+
+nav {
+    color: white;
+}
+
+hr {
     color: gray;
 }
+
 .navbar-toggler {
-    border-color: white !important; 
-  }
-  .navbar-toggler-icon {
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
-  }
-  /* Frame 6 */
+}
 
-/* Auto layout */
-/* display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 48px;
+.nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
 
-position: absolute;
-width: 586px;
-height: 287px;
-left: 180px;
-top: 334px;
- */
+.nav-link:hover {
+    color: #33b2c6;
+    text-decoration: none;
+}
 
- .hero .text-blue {
+.section1 {
+    height: 1024px;
+}
+
+.text-blue {
     color: #33b2c6;
 }
-.hero h1 {
+
+h1 {
     font-size: 3rem;
     font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1px;
 }
+
 .hero .text-blue {
     color: #33b2c6;
 }
-.btn-custom {
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-weight: bold;
-}
-.btn-primary-custom {
-    background-color: #33b2c6;
-    border: none;
-}
-.btn-dark-custom {
-    background-color: #252a34;
-    color: white;
-}
-.btn-dark-custom:hover {
-    background-color: #333a47;
-}
+
 .hero img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+p {
+    padding: 1rem 0;
+    line-height: 1.6;
+}
+
+.btn-custom {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom {
+    background-color: #33b2c6;
+    border: none;
+    color: white;
+}
+
+.btn-primary-custom:hover {
+    background-color: #2a9fb4;
+}
+
+.btn-dark-custom {
+    background-color: #252a34;
+    color: white;
+    border: none;
+}
+
+.btn-dark-custom:hover {
+    background-color: #333a47;
+}
+
+.about_image {
+    background-image: url(./assests/doodle\ items.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item ul {
+    gap: 48px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        text-align: center;
+    }
+   
+}
+
+html {
+    scroll-behavior: smooth;
 }
