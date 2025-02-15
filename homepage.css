@@ -42,6 +42,9 @@ hr {
 .section1 {
     height: 1024px;
 }
+.section2{
+    min-height: auto;
+}
 
 .text-blue {
     color: #33b2c6;
@@ -107,6 +110,84 @@ p {
     gap: 48px;
 }
 
+.about_hr {
+    margin-top: 6rem !important;
+    margin-bottom: 5rem !important;
+}
+
+.sec-3 {
+    background-image: url(./assests/doodle\ items.png);
+    margin: auto center;
+}
+/* Section container */
+.sec3-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+    text-align: center; /* Ensures text alignment is centered */
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures wrapping on small screens */
+}
+
+/* Filter button styles */
+.custom-btn {
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent effect */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+
+.btn-check:checked + .custom-btn {
+    background-color: #00bcd4; 
+}
+
+.custom-btn:hover {
+    background-color: rgba(0, 188, 212, 0.5);
+    color: white;
+}
+
+/* Portfolio Grid */
+.custom-row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Portfolio Item */
+.common {
+    backdrop-filter: blur(1px);
+    background-color: rgba(193, 168, 168, 0.2);
+    border-radius: 10px;
+    padding: 15px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    width: 100%; 
+    max-width: 350px; 
+}
+
+
+
+.custom-container {
+    margin-top: 249px !important;
+}
+
 /* Responsive Typography */
 @media (max-width: 768px) {
     h1 {
@@ -116,9 +197,25 @@ p {
     .hero {
         text-align: center;
     }
-   
+    .section1 .section2 {
+        min-height: auto;
+    }
+    .about_hr {
+        margin-top: 8rem !important;
+    }
+    .common {
+        width: 48%; 
+    }
+}
+@media (min-width: 992px) {
+    .common {
+        width: 30%; 
+    }
 }
 
-html {
-    scroll-behavior: smooth;
+
+.common img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
