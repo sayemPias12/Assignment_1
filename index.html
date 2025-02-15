@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./homepage.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   </head>
   <body>
     <section class="section1">
@@ -107,42 +108,75 @@
       <hr class="about_hr" />
     </section>
 
-    <section class="section1 sec-3">
-      <div class="container sec3-container">
-        <h1>My Recent <span style="color: #00bcd4">Works</span></h1>
+    <section class="section1 d-flex align-items-center" style="height: 100vh">
+      <div class="container hero">
+        <div class="row w-100 align-items-center g-5">
+          <!-- Heading Section -->
+          <div class="col-12 col-lg-6 text-center text-lg-start">
+            <h1>Got a project in</h1>
+            <h1 class="text-info">Mind?</h1>
+            <img
+              src="./assests/Group 2372.png"
+              class="img-fluid mt-3"
+              alt="Project Image"
+            />
+          </div>
 
-        <!-- Filter Buttons -->
-        <div class="filter-buttons my-4">
-          <input type="radio" class="btn-check" name="filter" id="filter-all" checked />
-          <label class="btn custom-btn" for="filter-all">All</label>
-      
-          <input type="radio" class="btn-check" name="filter" id="filter-ui" />
-          <label class="btn custom-btn" for="filter-ui">UI</label>
-      
-          <input type="radio" class="btn-check" name="filter" id="filter-ux" />
-          <label class="btn custom-btn" for="filter-ux">UX</label>
-      
-          <input type="radio" class="btn-check" name="filter" id="filter-web-design" />
-          <label class="btn custom-btn" for="filter-web-design">Web Design</label>
-      </div>
-      
-
-        <!-- Portfolio Grid -->
-        <div class="row custom-row"> <!-- Custom class for additional styling -->
-          <div class="col-12 col-md-6 col-lg-4 portfolio-item common" data-category="ui">
-              <img src="./assests/Course Website Landing Page Thumbnail 1.png" alt="UI Design">
+          <!-- Contact Form -->
+          <div class="col-12 col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-info w-100">
+                Send Message <i class="fas fa-paper-plane ms-2"></i>
+              </button>
+            </form>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 portfolio-item common" data-category="ux">
-              <img src="./assests/Group 33.png" alt="UX Design">
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 portfolio-item common" data-category="web-design">
-              <img src="./assests/Group 1.png" alt="Web Design">
-          </div>
-      </div>
-      
+        </div>
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+              <div class="footer-links">
+                  <a href="#"><i class="fas fa-home icon"></i>Home</a>
+                  <a href="#"><i class="fas fa-user icon"></i>About me</a>
+                  <a href="#"><i class="fas fa-envelope icon"></i>Contact</a>
+              </div>
+              <p class="text-center mt-3">Terms of Service - Privacy Policy</p>
+          </div>
+      </footer>
+  
+      <!-- Bootstrap JS and dependencies -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

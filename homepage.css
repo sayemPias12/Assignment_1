@@ -181,6 +181,32 @@ p {
     width: 100%; 
     max-width: 350px; 
 }
+.footer {
+    background-color: #222831;
+    padding: 20px 0;
+    border-top: 1px solid #393d40;
+}
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer p {
+    margin: 10px 0 0;
+    color: #6c757d;
+}
+.footer .icon {
+    margin-right: 5px;
+}
+.footer .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
 
 
