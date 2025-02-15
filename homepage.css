@@ -213,6 +213,9 @@ p {
 .custom-container {
     margin-top: 249px !important;
 }
+.about-img{
+    max-width: 80%;
+}
 
 
 /* Responsive Typography */
